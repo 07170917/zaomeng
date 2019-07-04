@@ -1,0 +1,18 @@
+/* miniprogram/pages/add/add.wxss */
+.title{
+  text-align: center
+}
+.body{
+  height: 180rpx;
+}
+image{
+  width: 300rpx;
+  height: 300rpx;
+  margin-left: 220rpx;
+}
+button{
+width:100%; 
+color:green; 
+position:fixed; 
+bottom:0;  
+}

@@ -1,0 +1,5 @@
+/* pages/myphoto/myphoto.wxss */
+.shoubutton{
+  margin-top: 400rpx;
+  width: 300rpx;
+}

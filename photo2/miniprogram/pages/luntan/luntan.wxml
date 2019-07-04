@@ -1,0 +1,34 @@
+<view class='weui-panel__bd'>
+  <view class="page-section page-section-spacing swiper" style='margin:10px;'>
+      <swiper autoplay="true" interval="3000" duration="1000">
+        <block wx:for="{{background}}">
+          <swiper-item>
+            <image src='{{item}}' style='border-radius: 50rpx; width:100%;height:100%'></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  <view wx:for="{{tie}}" class='weui-media-box weui-media-box_text' data-index="{{item._id}}" bindtap='xingxi'>
+    <view class='user'>
+      <image src='{{item.posterimage}}'></image>
+      <view class='date'>
+        <view style='height:30rpx'>
+          <text>{{item.posterName}}</text>
+        </view>
+          <text style='font-size:15rpx'>{{item.date}}</text>
+      </view>
+    </view>
+    <text class='weui-media-box__title'>{{item.title}}</text>
+    <text class='weui-media-box__desc'>{{item.content}}</text>
+  </view>
+  <view class='fatie'>
+    <navigator url='../../pages/addtie/addtie'>
+      <button>发帖</button>
+    </navigator>
+  </view>
+</view>
+<view>
+  <loading hidden="{{loadingHidden}}">
+    加载中。。。
+  </loading>
+</view>

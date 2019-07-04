@@ -1,0 +1,7 @@
+/* miniprogram/pages/addtie/addtie.wxss */
+button{
+width:100%; 
+color:green; 
+position:fixed; 
+bottom:0; 
+}

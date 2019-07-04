@@ -1,0 +1,37 @@
+<!--miniprogram/pages/item/item.wxml-->
+<view>
+  <view class='index'>
+    <view class='renxin'>
+      <view class='touxiang'>
+        <image src='{{data.posterimage}}' class='touxiang'></image>
+      </view>
+      <text class='name'>{{data.posterName}}</text>
+    </view>
+    <view class='tie'>
+      <text class='title'>{{data.title}}</text>
+      <text class='content'>{{data.content}}</text>
+    </view>
+  </view>
+  <text class='date'>{{data.date}}</text>
+  <view>
+    <view wx:for="{{comments}}" class='all'>
+      <view class='renxin'>
+        <view class='touxiang'>
+          <image src='{{item.youtou}}' class='touxiang'></image>
+        </view>
+        <text class='name'>{{item.youname}}</text>
+      </view>
+      <view class='allcom'>
+        <text class='comments'>{{item.comments}}</text>
+        <text class='date'>{{item.date}}</text>
+      </view>
+    </view>
+    <view class='da'>
+      <view class='search'>
+        <input class='input' placeholder='说说吧' value='{{inputval}}' bindinput='bindKeyInput'></input>
+        <button bindtap='comments' wx:if="{{shouquan}}" type='primary'>发 送</button>
+        <button open-type='getUserInfo' bindgetuserinfo="quanxian"  wx:if="{{!shouquan}}">请授权</button>
+      </view>
+    </view>
+  </view>
+</view>

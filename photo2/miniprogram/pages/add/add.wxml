@@ -1,0 +1,12 @@
+<view>
+<form bindsubmit="formSubmit">
+  <view><input placeholder='标题action' maxlength='10' name="title" class='title' ></input></view>
+  <view>
+  <image src='{{src}}' mode='aspectFit' name="image" bindtap='addphoto'></image>
+  </view>
+  <view>
+    <textarea placeholder='开始正文吧' name="body"  maxlength='-1' class='body' ></textarea>
+  </view>
+  <button form-type='submit' type='primary' disabled='{{ing}}'>上传</button>
+</form>
+</view>

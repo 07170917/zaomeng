@@ -1,0 +1,17 @@
+<view wx:if="{{shouquan}}">
+  <view class='page'>
+  <view wx:for="{{array}}"   class='weui-cell weui-cell_swiped'>
+    <view class='weui-media-box__hd weui-media-box__hd_in-appmsg'>
+      <image src='{{item.image}}' class='weui-media-box__thumb' mode='scaleToFill' data-src='{{item.image}}' bindtap='bigimage'></image>
+    </view>
+    <view class='weui-cell__bd' style='width:500rpx'>
+     <text class='weui-media-box__title'>{{item.title}}</text>
+      <text class='weui-media-box__desc'>{{item.body}}</text>
+    </view>
+    <view class='weui-cell__ft' bindtap='delete1' data-xw='{{item.image}}' data-x='{{item._id}}'>x</view>
+  </view>
+</view>
+</view>
+<view wx:else>
+  <button open-type='getUserInfo' class='shoubutton' bindgetuserinfo="quanxian" bindtap="onGetOpenid" type="primary">请先授权</button>
+</view>

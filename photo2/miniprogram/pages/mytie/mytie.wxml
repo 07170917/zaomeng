@@ -1,0 +1,21 @@
+<view class='weui-panel__bd' wx:if="{{shouquan}}">
+  <view wx:for="{{tie}}" class='weui-media-box weui-media-box_text'>
+    <view class='user'>
+      <image src='{{item.posterimage}}'></image>
+      <view class='date'>
+        <view style='height:30rpx'>
+          <text>{{item.posterName}}</text>
+        </view>
+        <text style='font-size:15rpx'>{{item.date}}</text>
+      </view>
+      <view bindtap='delete2' data-x='{{item._id}}'>x</view>
+    </view>
+    <view bindtap='xingxi' data-index="{{item._id}}">
+    <text class='weui-media-box__title'>{{item.title}}</text>
+    <text class='weui-media-box__desc'>{{item.content}}</text>
+  </view>
+  </view>
+</view>
+<view wx:else>
+  <button open-type='getUserInfo' class='shoubutton' bindgetuserinfo="quanxian" bindtap="onGetOpenid" type="primary">请先授权</button>
+</view>

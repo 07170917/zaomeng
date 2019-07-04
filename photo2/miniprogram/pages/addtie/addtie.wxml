@@ -1,0 +1,11 @@
+<view class='weui-cells weui-cells_after-title'>
+<form bindsubmit="addtie" class='weui-cell_input'>
+  <view class='weui-cell__bd'>标题：<input placeholder='帖子名'class="weui-input" maxlength='10' name="title"></input></view>
+  <view class='weui-cell__bd'>
+  内容：
+    <textarea placeholder='帖子内容' class='weui-textarea' name="content"  maxlength='-1' ></textarea>
+  </view>
+  <button open-type='getUserInfo' bindgetuserinfo="quanxian" wx:if="{{!authorized}}">请先授权</button>
+  <button form-type='submit' wx:if="{{authorized}}" type='primary'>发帖</button>
+</form>
+</view>

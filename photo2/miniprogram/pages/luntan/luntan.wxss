@@ -1,0 +1,24 @@
+/* miniprogram/pages/luntan/luntan.wxss */
+.fatie{
+  width: 100%;
+  height: 110rpx;
+}
+.fatie button{
+  position:fixed; 
+  bottom:0;  
+width: 100%;
+color: green;
+}
+.user{
+  display: flex;
+}
+.user image{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.date{
+ font-size: 25rpx;
+ margin: 10rpx;
+ margin-left: 20rpx;
+}

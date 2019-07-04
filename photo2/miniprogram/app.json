@@ -1,0 +1,38 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/luntan/luntan",
+    "pages/add/add",
+    "pages/item/item",
+    "pages/addtie/addtie",
+    "pages/my/my",
+    "pages/mytie/mytie",
+    "pages/myphoto/myphoto"
+  ],
+  "tabBar": {
+    "selectedColor": "green",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/luntan/luntan",
+        "text": "论坛"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "昭瞢",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

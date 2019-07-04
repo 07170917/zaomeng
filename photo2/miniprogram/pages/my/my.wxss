@@ -1,0 +1,12 @@
+.userimage{
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 50%;
+  overflow:hidden;
+  margin-left:250rpx;
+  margin-top: 100rpx;
+}
+.username{
+margin-left:300rpx;
+margin-bottom: 50rpx;
+}

@@ -1,0 +1,19 @@
+/* miniprogram/pages/luntan/luntan.wxss */
+.user{
+  display: flex;
+}
+.user image{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.date{
+ font-size: 25rpx;
+ margin: 10rpx;
+ margin-left: 20rpx;
+ width: 600rpx;
+}
+.delete2{
+  width: 200rpx;
+  height: 200rpx;
+}

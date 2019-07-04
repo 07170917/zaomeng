@@ -1,0 +1,79 @@
+/* miniprogram/pages/item/item.wxss */
+.index{
+ display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+}
+.all{
+  border-top:1rpx solid #e5e5e5;
+   display: flex;
+  flex-direction: row;
+}
+.touxiang{
+  margin: 10rpx;
+}
+.touxiang image{
+ width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.name{
+  font-size: 30rpx;
+}
+.date{
+  font-size: 25rpx;
+  display: flex;
+  flex-direction:row-reverse;
+}
+.renxin{
+  width: 150rpx;
+  margin-right: 10px;
+}
+.comments{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  font-size: 25px;
+}
+.content{
+  margin-top: 10px;
+  font-size: 30rpx;
+}
+.tie{
+  display: flex;
+  flex-direction: column;
+}
+.allcom{
+  width: 100%;
+ display: flex;
+  flex-direction: column;
+}
+.da{
+  height: 120rpx;
+}
+.search{
+  display: flex;
+  padding: 5px;
+  font-size: 14px;
+  background-color: #ccc;
+   position:fixed; 
+  bottom:0;  
+  width: 100%;
+}
+.search button{
+  width: 30%;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 5px;
+}
+.input{
+  width: 65%;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #ccc;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+}
